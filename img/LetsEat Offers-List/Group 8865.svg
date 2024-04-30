@@ -1,0 +1,17 @@
+<svg id="Group_8865" data-name="Group 8865" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="181" height="181" viewBox="0 0 181 181">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3860" data-name="Rectangle 3860" width="181" height="181" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_8866" data-name="Group 8866" clip-path="url(#clip-path)">
+    <path id="Path_73277" data-name="Path 73277" d="M180.5,90.5a90,90,0,1,1-90-90,90,90,0,0,1,90,90" fill="#f2f4fa"/>
+    <circle id="Ellipse_287" data-name="Ellipse 287" cx="90" cy="90" r="90" transform="translate(0.5 0.5)" fill="none" stroke="#c0c6d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_73278" data-name="Path 73278" d="M127.607,88.317,105.4,126.642c-2.144,3.858-7.288,4.973-11.4,2.658L56.872,107.865c-4.115-2.4-5.658-7.373-3.429-11.232L75.649,58.308a7.454,7.454,0,0,1,5.659-3.772l27.008-3.944a9.109,9.109,0,0,1,9.6,5.573l10.118,25.378a8.131,8.131,0,0,1-.429,6.774" fill="#fff"/>
+    <path id="Path_73279" data-name="Path 73279" d="M127.607,88.317,105.4,126.642c-2.144,3.858-7.288,4.973-11.4,2.658L56.872,107.865c-4.115-2.4-5.658-7.373-3.429-11.232L75.649,58.308a7.454,7.454,0,0,1,5.659-3.772l27.008-3.944a9.109,9.109,0,0,1,9.6,5.573l10.118,25.378A8.131,8.131,0,0,1,127.607,88.317Z" fill="none" stroke="#c0c6d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_73280" data-name="Path 73280" d="M110.414,74.932a8.458,8.458,0,1,1-3.1-11.554,8.458,8.458,0,0,1,3.1,11.554" fill="#fff"/>
+    <path id="Path_73281" data-name="Path 73281" d="M110.414,74.932a8.458,8.458,0,1,1-3.1-11.554A8.458,8.458,0,0,1,110.414,74.932Z" fill="none" stroke="#c0c6d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <rect id="Rectangle_3858" data-name="Rectangle 3858" width="6.43" height="34.296" transform="translate(73.8 87.14) rotate(-60)" fill="#c0c6d9"/>
+    <rect id="Rectangle_3859" data-name="Rectangle 3859" width="6.43" height="17.147" transform="matrix(0.5, -0.866, 0.866, 0.5, 73.443, 104.907)" fill="#c0c6d9"/>
+  </g>
+</svg>

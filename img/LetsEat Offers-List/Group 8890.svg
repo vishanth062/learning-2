@@ -1,0 +1,16 @@
+<svg id="Group_8890" data-name="Group 8890" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15.75" height="16.85" viewBox="0 0 15.75 16.85">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3696" data-name="Rectangle 3696" width="15.75" height="16.85" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_8768" data-name="Group 8768">
+    <g id="Group_8767" data-name="Group 8767" clip-path="url(#clip-path)">
+      <path id="Path_73248" data-name="Path 73248" d="M15.375,12.425v-8l-7.5-4-7.5,4v8l7.5,4Z" fill="none" stroke="#ffd55a" stroke-width="0.75"/>
+      <path id="Path_73249" data-name="Path 73249" d="M.375,4.425l7.343,4,7.657-4" fill="none" stroke="#ffd55a" stroke-width="0.75"/>
+      <line id="Line_781" data-name="Line 781" y1="8" transform="translate(7.875 8.425)" fill="none" stroke="#ffd55a" stroke-width="0.75"/>
+    </g>
+  </g>
+  <line id="Line_782" data-name="Line 782" x2="7.155" y2="4.037" transform="translate(4.297 2.406)" fill="none" stroke="#ffd55a" stroke-width="0.75"/>
+  <line id="Line_783" data-name="Line 783" x2="0.088" y2="3.31" transform="translate(11.453 6.444)" fill="none" stroke="#ffd55a" stroke-width="0.75"/>
+</svg>

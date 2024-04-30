@@ -1,0 +1,327 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    list-style: none;
+}
+.top-container{
+    display: grid;
+    grid-template-rows:auto ;
+    grid-template-columns: repeat(auto-fit minmax(200px,1fr));
+    grid-gap: 0px;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 262px 1fr;
+    grid-template-rows: 77px 1fr;
+    grid-template-areas: 
+    "side head"
+    "side main";
+}
+.head{
+    background-color:#F2F4FA;
+   grid-area: head;
+   display: flex;
+   justify-content: space-between;
+}
+.sidebar{
+    background-color: #293250;
+   grid-area:side ;
+    
+}
+.main{
+    background-color: white;
+    grid-area: main;
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "c1"
+    "c2"
+    "c3"
+    "c4";
+    margin: 20px;
+   
+   
+   
+}
+
+
+ li{
+    color:white;
+    height: 40px;
+    width: 230px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.flex-box{
+    display: flex;
+}
+
+.card{
+    background-color: #FFFFFF;
+    margin-right: 41px;
+    margin-bottom: 20px;
+    border-radius: 10px 10px 10px 10px;
+    margin: top 0;
+    
+    
+}
+
+.card:nth-child(1){
+    grid-area: c1;
+    
+    
+    
+
+}
+.card:nth-child(2){
+    grid-area: c2;
+}
+.card:nth-child(3){
+    grid-area: c3;
+}
+.card:nth-child(4){
+    grid-area: c4;
+}
+
+
+
+
+.card-upper1 {
+    background-color: #26D07C;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Styles for .card-upper2 when it's a descendant of .card-upper1 */
+ .card-upper3 {
+    background-color: #808080; /* This will inherit the background color from .card-upper1 */
+    /* Add additional styles specific to .card-upper2 here */
+}
+.card-upper4 {
+    background-color: #D87373; /* This will inherit the background color from .card-upper1 */
+    /* Add additional styles specific to .card-upper2 here */
+}
+
+.card-lower1{
+    background-color:white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-radius:0 0 10px 10px;
+}
+
+
+.card-lower1-info{
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border-right: thick;
+}
+
+.lower11-info{
+    display: flex;
+}
+
+
+.btn{
+    background-color: white;
+    color: black;
+   width: 140px;
+   height: 38px;
+   border-radius: 20px;
+}
+.btn:hover{
+    background-color:white;
+    color: black;
+}
+.search{
+  width: 338px;
+  height: 100px;
+   align-items: center;
+  
+   border-radius: 28px;
+  background-color: #e1dede;
+ 
+   
+}
+.search-bar{
+    background: transparent;
+    border: none;
+    outline: none;
+   margin-right:10px;
+   padding: 10px;
+    width: 338px;
+    height: 100px;
+   
+   
+}
+
+.create{
+    background-color: #FFD55A;
+    border-radius: 30px;
+    width: 190px;
+    height: 38px;
+    border: none;
+    outline: none;
+    float: right;
+    margin-top: 20px;
+    
+}
+.dropdown{
+    margin:0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.page-button{
+   
+    background-color: white;
+    color: #457CD6;
+    border: thick;
+    border-right-color: #457CD6;
+}
+
+.active{
+    background-color: #457CD6;
+    border: thick;
+    color: white;
+    border-right-color: #457CD6;
+}
+
+.card-dropdown{
+    border:solid;
+    border-color: white;
+    color: black;
+    background-color: white;
+}
+
+
+.button1{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.button1:hover{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+
+
+.container{
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transform: translate(10%,0%) scale(1);
+    opacity: 1;
+    transition: 2ms ease-in-out;
+    
+}
+
+ .acti{
+    opacity: 0;
+}
+
+.nav-link:hover{
+    background: linear-gradient(to right, #3D4869 95%, #FFD55A 1%);
+    color: white;
+  }
+
+
+
+#overlay{
+    width: 68.7%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.2);
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index:2;
+    display: none;
+}
+
+
+
+
+
+  
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(226, 220, 220);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px rgb(226, 220, 220);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
