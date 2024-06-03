@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,350 +8,447 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <title>Bootstrap Example</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css"> 
 </head>
+
 <body>
-<header class="head">
-    <div style="margin: 20px;margin-bottom: 10px;"><h1><b>offer</b></h1></div>
-    <div>
-        <span style="margin: 20px;margin-bottom: 10px;">William Bishop</span>
-        <img src="./img/LetsEat Offers-List/Path 73338.svg" alt="logo" width="20" height="20" style="margin: 20px;margin-bottom: 10px;">
-        <img src="./img/LetsEat Offers-List/Ellipse 232@2x.png" alt="photo" width="30" height="24" style="margin: 20px;margin-bottom: 10px;">
+    <header class="head" style="display: flex;align-items: center;position:sticky;top: 0;z-index:10; ">
+        <div style="margin: 20px;margin-bottom: 10px;font-size: 25px;font-family: 'Montserrat', sans-serif;">
+            <b>0ffers</b>
+        </div>
+        <div style="display:flex;justify-content: center;">
+            <span class="me-3">William Bishop</span>
+            <img class="my-2 mx-1" src="./img/LetsEat Offers-List/Path 73338.svg" alt="logo" width="15" height="15">
+            <img class="mx-2 my-1" src="./img/LetsEat Offers-List/Ellipse 232@2x.png" alt="photo" width="30" height="24">
+
+
+        </div>
+    </header>
+    <section class="sidebar " style="position:sticky; top: 100px;z-index: 999;">
+        <div style="text-align: center;">
+        <img src="./img/LetsEat Offers-List/logo.png" alt="eat" width="200px" style="padding: 10px;">
+    </div>
+        <ul style="color: white;padding: 0;margin: 0;">
+            <div class="felx-box">
+
+                <li>
+                    <img src="./img/LetsEat Offers-List/Group 8236.svg" alt="logo">
+                    Dashboard
+
+                </li>
+            </div>
+
+            <li>
+                <img src="./img/LetsEat Offers-List/Group 2989.svg" alt="logo">
+                Restuarants
+            </li>
+            <li>
+                <img src="./img/LetsEat Offers-List/Group 8237.svg" alt="">
+                Cuisines
+            </li>
+            <li>
+                <img src="./img/LetsEat Offers-List/Group 8239.svg" alt="">
+                Curated List
+            </li>
+            <li>
+                <img src="./img/LetsEat Offers-List/Group 8240.svg" alt="">
+                Orders
+            </li>
+            <li>
+                <img src="./img/LetsEat Offers-List/Group 8242.svg " alt="">
+                Payouts
+            </li>
+            <li>
+                <img src="./img/LetsEat Offers-List/Group 8244.svg" alt="">
+                Customers
+            </li>
+            <li>
+                <img src="./img/LetsEat Offers-List/Layer 2.svg" alt="">
+                Template
+            </li>
+            <li>
+                <img src="./img/LetsEat Offers-List/Group 8871.svg" alt="">
+                Supplies
+
+            </li>
+            <li>
+                <img src="./img/LetsEat Offers-List/Group 8890.svg" alt="">
+                Supplies Orders
+            </li>
+            <li>
+                <img src="./img/LetsEat Offers-List/Group 8914.svg" alt="">
+                Reviews
+            </li>
+            <li>
+                <img src="./img/LetsEat Offers-List/Group 8917.svg" alt="">
+                Offers
+            </li>
+        </ul>
+    </section>
+    <main class="main1">
+        <div id="overlay"></div>
+        <div class="dropdown" style="margin-bottom: 30px;">
+           <div>
+                <span style="margin-left: 50px;">Filter</span>
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    All
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">All</a></li>
+                    <li><a class="dropdown-item" href="#">Active</a></li>
+                    <li><a class="dropdown-item" href="#">inactive</a></li>
+                    <li><a class="dropdown-item" href="#">Expired</a></li>
+                </ul>
+            </div>
+
+
+                <div class="search">
+              
+                    <input type="text" placeholder="Search" class="search-bar">
+                    <i class="fa fa-search"></i>
+                    <!-- <i class="fa fa-search"></i> -->
+               
+            </div>
+            
+
+                <div class="me-5">
+                <button class="create" style="margin-top:0;" id="opensidebar">
+                    <img src="./img/LetsEat Offers-List/Group 6454.svg" alt="">
+                    Create Offer
+                </button>
+                </div>
+           
+
+        </div>
+
+        <div class="acti">
+            <img src="./img/LetsEat Offers-List/Group 8865.svg" alt="">
+            <p>
+            <h4><b>Oops! No Offers to Display!</b></h4>
+            </p>
+            <p>Add new offers so your customers can avail them while placing orders.</p>
+            <button class="create" style="float: left;" id="btnOpenSidebarCreate">
+                <img src="./img/LetsEat Offers-List/Group 6454.svg" alt="">
+                create</button>
+
+
+        </div>
+
+
+        <div class="main">
+
+        <div class="card">
+            <div class="card-upper1">
+                <header style="display: flex;justify-content: space-between;padding: 0;margin: 0;">
+                    <h4 style=" padding: 19px;"><b>NEW30</b>
+
+                    </h4>
+                    <button type="button" class="btn border-none button1" data-bs-toggle="dropdown"
+                        aria-expanded="false" style="margin-top: 10px;">
+
+                        <img src="./img/LetsEat Offers-List/Icon material-more-vert.svg" alt="three dot"
+                            style="margin-right:20px;"></button>
+                    <ul class="dropdown-menu font-15">
+                        <li><a class="dropdown-item" id="viewdropdown">view</a></li>
+                        <li id="editdropdown"><a class="dropdown-item" href="#">edit</a></li>
+                        <li>
+                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"
+                                style="cursor:context-menu" style="cursor:context-menu">activate</a>
+                        </li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                style="cursor:context-menu">deactivate</a></li>
+                    </ul>
+
+
+                </header>
+                <p style="padding:2px;">Use code NEW30 and get FLAT 10% off on orders above £250.</p>
+
+
+            </div>
+            <div class="card-lower1">
+                <div class="card-lower1-info lower-card-allign" >
+                    <div class="border-margin">
+                    Offer Type
+                    <p><b>Percentage</b></p>
+                </div>
+                    <p>Offer Validity</p>
+                    <p ><span style="color: #909AB9;">Start Date:</span><b>01/05/2022</b></p>
+
+
+                </div>
+                <div class="card-lower1-info  lower-card-allign" >
+                    <div class="border-margin">
+                    Discount
+                    <p><b>10%</b></p>
+                </div>
+                    <p ><span style="color: #909AB9;margin: 0;margin-right:4px;">End date:</span><b>31/05/2022</b></p>
+
+                </div>
+                <div class="card-lower1-info lower-card-allign">
+                    <div class="border-margin">
+                    Max Discount
+                    <p><b>100%</b></p>
+                </div>
+                <p>
+                    <img src="./img/LetsEat Offers-List/Icon material-timer.svg" alt="timer">
+                    31 Days
+                </p>
+                </div>
+                <div class="card-lower1-info lower-card-allign">
+                    <div class="border-margin">
+                    Min Order Value
+                    <p><b>&pound;250</b></p>
+                </div>
+                <p>
+                    Status<br>
+                    Active
+                </p>
+
+                </div>
+                <div class="card-lower1-info lower-card-allign">
+                    <div class="border-margin">
+                    User Type
+                    <p><b>New User</b></p>
+                </div>
+
+                <p>
+                    <a href="#" style="text-decoration:none;" style="width: 40px;" id="viewmore" >View More</a>
+                </p>
+
+                </div>
+            </div>
+           
+            
+       
+
+
+        </div>
+        <div class="card">
+
+            <div class="card-upper1">
+                <header style="display: flex;justify-content: space-between;">
+                    <h4 style=" padding: 19px;"><b>TRYNEW</b></h4>
+                    <button style="background: transparent; border: none;outline: none;"> <img
+                            src="./img/LetsEat Offers-List/Icon material-more-vert.svg" alt="three dot"
+                            style="margin-right:60px;"></button>
+                </header>
+                <p style="padding:2px;">Use code TRY NEW and get FLAT £20 off on orders above £150.</p>
+
+            </div>
+            <div class="card-lower1">
+                <div class="card-lower1-info lower-card-allign" >
+                    <div class="border-margin">
+                    Offer Type
+                    <p><b>Flat</b></p>
+                </div>
+                    <p>Offer Validity</p>
+                    <p ><span style="color: #909AB9;">Start Date:</span><b>01/05/2022</b></p>
+
+
+                </div>
+                <div class="card-lower1-info  lower-card-allign" >
+                    <div class="border-margin">
+                    Discount
+                    <p><b>&pound;20</b></p>
+                </div>
+                    <p ><span style="color: #909AB9;margin: 0;margin-right:4px;">End date:</span><b>31/05/2022</b></p>
+
+                </div>
+                <div class="card-lower1-info lower-card-allign">
+                    <div class="border-margin">
+                    Max Discount
+                    <p><b>&pound;20</b></p>
+                </div>
+                <p>
+                    <img src="./img/LetsEat Offers-List/Icon material-timer.svg" alt="timer">
+                    31 Days
+                </p>
+                </div>
+                <div class="card-lower1-info lower-card-allign">
+                    <div class="border-margin">
+                    Min Order Value
+                    <p><b>&pound;150</b></p>
+                </div>
+                <p>
+                    Status<br>
+                    Active
+                </p>
+
+                </div>
+                <div class="card-lower1-info lower-card-allign">
+                    <div class="border-margin">
+                    User Type
+                    <p><b>New User</b></p>
+                </div>
+
+                <p>
+                    <a href="#" style="text-decoration:none;" style="width: 40px;" id="viewmore" >View More</a>
+                </p>
+
+                </div>
+            </div>
+           
+        </div>
+
+        <div class="card">
+            <div class="card-upper1 card-upper3">
+                <header style="display: flex;justify-content: space-between;">
+                    <h4 style=" padding: 19px;"><b>STEALDEAL</b></h4>
+                    <button style="background: transparent; border: none;outline: none;"><img
+                            src="./img/LetsEat Offers-List/Icon material-more-vert.svg" alt="three dot"
+                            style="margin-right:60px;"></button>
+                </header>
+                <p style="padding: 2px;">Use code STEALDEAL and get FLAT £20 off on orders above £150.</p>
+
+            </div>
+
+            <div class="card-lower1">
+                <div class="card-lower1-info lower-card-allign" >
+                    <div class="border-margin">
+                    Offer Type
+                    <p><b>Flat</b></p>
+                </div>
+                    <p>Offer Validity</p>
+                    <p ><span style="color: #909AB9;">Start Date:</span><b>01/05/2022</b></p>
+
+
+                </div>
+                <div class="card-lower1-info  lower-card-allign" >
+                    <div class="border-margin">
+                    Discount
+                    <p><b>&pound;20</b></p>
+                </div>
+                    <p ><span style="color: #909AB9;margin: 0;margin-right:4px;">End date:</span><b>31/05/2022</b></p>
+
+                </div>
+                <div class="card-lower1-info lower-card-allign">
+                    <div class="border-margin">
+                    Max Discount
+                    <p><b>&pound;20</b></p>
+                </div>
+                <p>
+                    <img src="./img/LetsEat Offers-List/Icon material-timer.svg" alt="timer">
+                    31 Days
+                </p>
+                </div>
+                <div class="card-lower1-info lower-card-allign">
+                    <div class="border-margin">
+                    Min Order Value
+                    <p><b>&pound;150</b></p>
+                </div>
+                <p>
+                    Status<br>
+                    Incative
+                </p>
+
+                </div>
+                <div class="card-lower1-info lower-card-allign">
+                    <div class="border-margin">
+                    User Type
+                    <p><b>New User</b></p>
+                </div>
+
+                <p>
+                    <a href="#" style="text-decoration:none;" style="width: 40px;" id="viewmore" >View More</a>
+                </p>
+
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-upper1 card-upper4">
+                <header style="display: flex;justify-content: space-between;">
+                    <h4 style=" padding: 19px;"><b>USEJUMBO</b></h4>
+                    <button style="background: transparent; border: none;outline: none;"><img
+                            src="./img/LetsEat Offers-List/Icon material-more-vert.svg" alt="three dot"
+                            style="margin-right:60px;"></button>
+                </header>
+                <p style="padding: 2px;">Use code USE JUMBO and get FLAT 15% off on orders above £200.</p>
+
+                
+
+            </div>
+            <div class="card-lower1">
+                <div class="card-lower1-info lower-card-allign" >
+                    <div class="border-margin">
+                    Offer Type
+                    <p><b>Percentage</b></p>
+                </div>
+                    <p>Offer Validity</p>
+                    <p ><span style="color: #909AB9;">Start Date:</span><b>01/05/2022</b></p>
+
+
+                </div>
+                <div class="card-lower1-info  lower-card-allign" >
+                    <div class="border-margin">
+                    Discount
+                    <p><b>15%</b></p>
+                </div>
+                    <p ><span style="color: #909AB9;margin: 0;margin-right:4px;">End date:</span><b>31/05/2022</b></p>
+
+                </div>
+                <div class="card-lower1-info lower-card-allign">
+                    <div class="border-margin">
+                    Max Discount
+                    <p><b>&pound;100</b></p>
+                </div>
+                <p>
+                    <img src="./img/LetsEat Offers-List/Icon material-timer.svg" alt="timer">
+                    31 Days
+                </p>
+                </div>
+                <div class="card-lower1-info lower-card-allign">
+                    <div class="border-margin">
+                    Min Order Value
+                    <p><b>&pound;200</b></p>
+                </div>
+                <p>
+                    Status<br>
+                    Expired
+                </p>
+
+                </div>
+                <div class="card-lower1-info lower-card-allign">
+                    <div class="border-margin">
+                    User Type
+                    <p><b>New User</b></p>
+                </div>
+
+                <p>
+                    <a href="#" style="text-decoration:none;" style="width: 40px;" id="viewmore" >View More</a>
+                </p>
+
+                </div>
+            </div>
+
+        </div>
+
        
 
     </div>
-</header>
-<section class="sidebar">
-    <img src="./img/LetsEat Offers-List/eat.png" alt="eat"  width="109.49px" style="padding: 27.2px;">
-    <ul  style="color: white;">
-        <div class="felx-box">
-           
-            <li>
-                <img src="./img/LetsEat Offers-List/Group 8236.svg" alt="logo">
-                Dashboard
-
-            </li>
-        </div>
-        
-        <li >
-           <img src="./img/LetsEat Offers-List/Group 2989.svg" alt="logo">
-            Restuarants
-        </li>
-        <li>
-            <img src="./img/LetsEat Offers-List/Group 8237.svg" alt="">
-            Cuisines
-        </li>
-        <li>
-            <img src="./img/LetsEat Offers-List/Group 8239.svg" alt="">
-            Curated List
-        </li>
-        <li>
-            <img src="./img/LetsEat Offers-List/Group 8240.svg" alt="">
-            Orders
-        </li>
-        <li>
-            <img src="./img/LetsEat Offers-List/Group 8242.svg " alt="">
-            Payouts
-        </li>
-        <li>
-            <img src="./img/LetsEat Offers-List/Group 8244.svg" alt="">
-            Customers
-        </li>
-        <li>
-            <img src="./img/LetsEat Offers-List/Layer 2.svg" alt="">
-            Template
-        </li>
-        <li>
-            <img src="./img/LetsEat Offers-List/Group 8871.svg" alt="">
-            Supplies
-
-        </li>
-        <li>
-            <img src="./img/LetsEat Offers-List/Group 8890.svg" alt="">
-            Supplies Orders
-        </li>
-        <li>
-            <img src="./img/LetsEat Offers-List/Group 8914.svg" alt="">
-            Reviews
-        </li>
-        <li>
-            <img src="./img/LetsEat Offers-List/Group 8917.svg" alt="">
-            Offers
-        </li>
-    </ul>
-</section>
-<main class="main">
-     <div id="overlay">
-
-    </div>
-    <div class="dropdown">
-        <div id="change">
-        <span style="margin-left: 50px;">filter</span>
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
-          All
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-        <span class="search">
-            <input type="text" placeholder="search" class="search-bar" >
-           
-        </span>
-      
-        <button class="create" id="opensidebar">
-            <img src="./img/LetsEat Offers-List/Group 6454.svg" alt="">
-            create</button>
-            
-           
-
-          </div>
-            <div class="acti">
-                <img src="./img/LetsEat Offers-List/Group 8865.svg" alt="">
-                <p><h4><b>Oops! No Offers to Display!</b></h4></p>
-                <p>Add new offers so your customers can avail them while placing orders.</p>
-                <button class="create" style="float: left;"  id="btnOpenSidebarCreate">
-                    <img src="./img/LetsEat Offers-List/Group 6454.svg" alt="">
-                    create</button>
-
-
-                         </div>
-           
-        </div>
-
-    <div class="card">
-        <div class="card-upper1">
-            <header style="display: flex;justify-content: space-between;">
-                <h4 style=" padding: 19px;"><b>NEW30</b>
-                    
-                </h4>
-                <button type="button" class="btn border-none button1" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                    
-                    <img src="./img/LetsEat Offers-List/Icon material-more-vert.svg" alt="three dot" style="margin-right:60px;"></button>
-                    <ul class="dropdown-menu font-15">
-                        <li><a class="dropdown-item" id="viewdropdown">view</a></li>
-                        <li id="editdropdown"><a class="dropdown-item" href="#" >edit</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" style="cursor:context-menu"  style="cursor:context-menu">activate</a>
-                        </li>
-                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="cursor:context-menu">deactivate</a></li>
-                      </ul>
-              
-                    
-            </header>
-            <p style="padding: 15px;">Use code NEW30 and get FLAT 10% off on orders above £250.</p>
-           
-
-        </div>
-        <div class="card-lower1">
-            <div class="card-lower1-info">
-                offer
-                <p><b>percentage</b></p>
-            </div>
-            <div class="card-lower1-info" >
-                discount
-                <p><b>10%</b></p>
-            </div>
-            <div class="card-lower1-info" >
-                max discount
-                <p><b>100%</b></p>
-            </div>
-            <div class="card-lower1-info" >
-                min order value
-                <p><b>&pound;100</b></p>
-            </div>
-            <div class="card-lower1-info" >
-                user type
-                <p><b>new user</b></p>
-            </div>
-        </div>
-        <p style="margin: 0;">offer validity</p>
-        <div style="display: flex;justify-content: space-between;">
-                <p ><span style="color: #909AB9;">start date:</span><b>01/05/2022</b></p>
-                <p><span style="color: #909AB9;">end date:</span><b>31/05/2022</b></p>
-                <p>
-                    <img src="./img/LetsEat Offers-List/Icon material-timer.svg" alt="timer">
-                    31 days
-                </p>
-            
-            <div>
-               <p>status</p> 
-               <p>Active</p>
-            </div>
-            <a href="#" style="text-decoration:none;" id="viewmore">view more</a>
-           
-        </div>
-
-
-    </div>
-    <div class="card">
-
-        <div class="card-upper1">
-            <header style="display: flex;justify-content: space-between;">
-                <h4 style=" padding: 19px;"><b>TRYNEW</b></h4>
-                <button style="background: transparent; border: none;outline: none;">  <img src="./img/LetsEat Offers-List/Icon material-more-vert.svg" alt="three dot" style="margin-right:60px;"></button>
-            </header>
-            <p style="padding: 15px;">Use code TRY NEW and get FLAT £20 off on orders above £150.</p>
-
-        </div>
-        <div class="card-lower1">
-            <div class="card-lower1-info">
-                offer type
-                <p><b>Flat</b></p>
-            </div>
-            <div class="card-lower1-info" >
-                discount
-                <p><b>&pound;20</b></p>
-            </div>
-            <div class="card-lower1-info" >
-                max discount
-                <p><b>&pound;20</b></p>
-            </div>
-            <div class="card-lower1-info" >
-                min order value
-                <p><b>&pound;150</b></p>
-            </div>
-            <div class="card-lower1-info" >
-                user type
-                <p><b>new user</b></p>
-            </div>
-        </div>
-        <p style="margin: 0;">offer validity</p>
-        <div style="display: flex;justify-content: space-between;">
-                <p ><span style="color: #909AB9;">start date:</span><b>01/05/2022</b></p>
-                <p><span style="color: #909AB9;">end date:</span><b>31/05/2022</b></p>
-                <p>
-                    <img src="./img/LetsEat Offers-List/Icon material-timer.svg" alt="timer">
-                    31 days
-                </p>
-            
-            <div>
-               <p>status</p> 
-               <p>Active</p>
-            </div>
-            <a href="#" style="text-decoration:none;">view more</a>
-           
-        </div>
-
-    </div>
-
-    <div class="card">
-        <div class="card-upper1 card-upper3">
-            <header style="display: flex;justify-content: space-between;">
-                <h4 style=" padding: 19px;"><b>STEALDEAL</b></h4>
-               <button style="background: transparent; border: none;outline: none;"><img src="./img/LetsEat Offers-List/Icon material-more-vert.svg" alt="three dot" style="margin-right:60px;"></button> 
-            </header>
-            <p style="padding: 15px;">Use code STEALDEAL and get FLAT £20 off on orders above £150.</p>
-
-        </div>
-        <div class="card-lower1">
-            <div class="card-lower1-info">
-                offer
-                <p><b>Flat</b></p>
-            </div>
-            <div class="card-lower1-info" >
-                discount
-                <p><b>&pound;20</b></p>
-            </div>
-            <div class="card-lower1-info" >
-                max discount
-                <p><b>&pound;20</b></p>
-            </div>
-            <div class="card-lower1-info" >
-                min order value
-                <p><b>&pound;150</b></p>
-            </div>
-            <div class="card-lower1-info" >
-                user type
-                <p><b>new user</b></p>
-            </div>
-        </div>
-        <p style="margin: 0;">offer validity</p>
-        <div style="display: flex;justify-content: space-between;">
-                <p ><span style="color: #909AB9;">start date:</span><b>01/05/2022</b></p>
-                <p><span style="color: #909AB9;">end date:</span><b>31/05/2022</b></p>
-                <p>
-                    <img src="./img/LetsEat Offers-List/Icon material-timer.svg" alt="timer">
-                    31 days
-                </p>
-            
-            <div>
-               <p>status</p> 
-               <p>inactive</p>
-            </div>
-            <a href="#" style="text-decoration:none;">view more</a>
-           
-        </div>
-    </div>
-
-
-    <div class="card">
-
-        <div class="card-upper1 card-upper4">
-            <header style="display: flex;justify-content: space-between;">
-                <h4 style=" padding: 19px;"><b>USEJUMBO</b></h4>
-                <button style="background: transparent; border: none;outline: none;"><img src="./img/LetsEat Offers-List/Icon material-more-vert.svg" alt="three dot" style="margin-right:60px;"></button>
-            </header>
-            <p style="padding: 15px;">Use code USE JUMBO and get FLAT 15% off on orders above £200.</p>
-
-        </div>
-        <div class="card-lower1">
-            <div class="card-lower1-info">
-                offer
-                <p><b>percentage</b></p>
-            </div>
-            <div class="card-lower1-info" >
-                discount
-                <p><b>15%</b></p>
-            </div>
-            <div class="card-lower1-info" >
-                max discount
-                <p><b>&pound;100</b></p>
-            </div>
-            <div class="card-lower1-info" >
-                min order value
-                <p><b>&pound;&pound;200</b></p>
-            </div>
-            <div class="card-lower1-info" >
-                user type
-                <p><b>new user</b></p>
-            </div>
-        </div>
-        <p style="margin: 0;">offer validity</p>
-        <div style="display: flex;justify-content: space-between;">
-                <p ><span style="color: #909AB9;">start date:</span><b>01/05/2022</b></p>
-                <p><span style="color: #909AB9;">end date:</span><b>31/04/2022</b></p>
-                <p>
-                    <img src="./img/LetsEat Offers-List/Icon material-timer.svg" alt="timer">
-                    0 days
-                </p>
-            
-            <div>
-               <p>status</p> 
-               <p>expired</p>
-            </div>
-            <a href="#" style="text-decoration:none;">view more</a>
-           
-        </div>
-
-    </div>
-    
     <div class="page">
         <button class="page-button">Previous</button>
         <button class="active">1</button>
         <button class="page-button">2</button>
         <button class="page-button">3</button>
         <button class="page-button">next</button>
-        
     </div>
-
-
-
-    <!-- <div class="container">
+        <!-- <div class="container">
         <img src="./img/LetsEat Offers-List/Group 8865.svg" alt="">
         <p><h4><b>Oops! No Offers to Display!</b></h4></p>
         <p>Add new offers so your customers can avail them while placing orders.</p>
@@ -360,150 +458,180 @@
     
     
         </div> -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
-                <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="modal-body" ><b>
-                  <h4><b>are sure do you want to deactivate the plan?</b>
-                </h4>
-                 
+                <div class="modal-content">
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body"><b>
+                            <h4><b>are sure do you want to deactivate the plan?</b>
+                            </h4>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class=" create" data-bs-dismiss="modal"
+                            style="background-color: white;border: 1px solid black;">
+                            no</button>
+                        <button type="button" class=" create" data-bs-dismiss="modal" id="change1">
+                            yes</button>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class=" create" data-bs-dismiss="modal" style="background-color: white;border: 1px solid black;">
-                        no</button>
-                  <button type="button" class=" create" data-bs-dismiss="modal" id="change1">
-                    yes</button>
-                </div>
-              </div>
             </div>
-          </div>
-
-
-
-
-          <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="modal-body" ><b>
-                  <h4><b>are sure do you want to activate the plan?</b>
-                </h4>
-                 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class=" create" data-bs-dismiss="modal" style="background-color: white;border: 1px solid black;">
-                        no</button>
-                  <button type="button" class=" create" data-bs-dismiss="modal" id="change1">
-                    yes</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-   
-</main>
-<div id="form" style="display: none;">
-    <header style="background-color: #E7EBF7;">
-        <h1>
-          <button style="background: transparent; border: none;outline: none;" class="close">
-          <img src="./img/LetsEat Offers-List/Group 8110.svg" alt="">
-        </button>
-          create a form
-          </h1>
-      </header>
-    <form action="index.html" method="post" id="form1">
-        <label for="username"><b>promo code</b></label><br>
-        <input type="text" id="username" name="username"><br>
-
-        <p><b>offer validity</b></p>
-        <div style="display: flex;margin-left: 40px;">
-          
-      <div style="margin-right: 20px;">
-        <label for="password">start date</label><br>
-        <input type="date" placeholder="Select a date"><br>
-      </div>
-      <div style="margin-right: 20px;">
-        <label for="password">end date</label><br>
-        <input type="date" id="password" name="password"><br>
-      </div>
-      </div>
-
-        <p><b>offer type</b></p>
-        <input type="radio">
-        <label for="pernectage">percentage(%)</label>
-        <input type="radio">
-        <label for="pernectage">flat</label><br>
-        <input type="text"><br>
-
-      <div style="display: flex;margin-left: 40px;margin-top: 20px;">
-        <div style="margin-right: 20px;">
-        <label for="maxdiscount"><b>maximum discount</b></label><br>
-        <input type="text">
-      </div>
-        <div style="margin-right: 20px;">
-        <label for="maxdiscount"><b>maximum amount</b></label><br>
-        <input type="text">
-      </div>
-      </div>
-       
-
-        <p><b>select user type</b></p>
-        <div style="display: flex;justify-content: space-around; margin-bottom: 10px;">
-          <div>
-        <input type="radio" name="newuser" >
-        <label  class="newuser">new user</label>
-      </div>
-      <div>
-        <input type="radio" name="exuser" >
-        <label  class="exuser">existing user</label>
-      </div>
-      </div>
-
-        <input type="radio">
-        <label for=""><b>applicable customer who registered between</b></label> 
-        <div style="display: flex;justify-content: space-around; margin-bottom: 10px;">
-          <div>
-        <label for="">start date</label><br>
-        <input type="date">
-      </div>
-
-      <div>
-        <label for="">end date</label><br>
-        <input type="date">
-      </div>
-
-      </div>
-         <div style="display: flex;margin-bottom: 10px;">
-        <input type="radio" name="" id="">
-        <div style="margin: 20px;">
-        <label for=""><b>redemptions per customer </b><br>applicable once per customer</label>
-      </div>
-      </div>
-
-      <div style="display: flex;margin-bottom: 10px;">
-        <input type="radio" name="" id="">
-        <div style="margin: 20px;">
-          <label for=""><b>Unique Customer Redemptions per Coupon </b><br>Applicable for the first 100 Customer</label>
-        </div>
         </div>
 
-<label for="" style="margin-right: 20px;" ><b>status</b></label>
-
-<label class="switch">
-  <input type="checkbox">
-  <span class="slider round"></span>
-</label>
 
 
 
-      <div id="submission">
-        <button id="create" class="create close" ><b>create</b></button>
+        <div class="modal fade align-items-center justify-content-center" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body"><b>
+                            <h4><b>are sure do you want to activate the plan?</b>
+                            </h4>
 
-      </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class=" create" data-bs-dismiss="modal"
+                            style="background-color: white;border: 1px solid black;">
+                            no</button>
+                        <button type="button" class=" create" data-bs-dismiss="modal" id="change1">
+                            yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    
-<!-- 
+
+    </main>
+
+
+    <div id="form" style="display: none;z-index: 999;">
+        <header style="background-color: #E7EBF7;">
+            <h1 style="font-size: 20px;font-weight: bold;">
+                <button style="background: transparent; border: none;outline: none;" class="close">
+                    <img src="./img/LetsEat Offers-List/Group 8110.svg" alt="">
+                </button>
+                Create Form
+            </h1>
+        </header>
+        <form action="index.html" method="post" id="form1" class="form-container">
+            <label for="username"><b>Promo Code</b></label><br>
+            <input type="text" id="username" name="username" class="input-border" style="width: 400px;"><br>
+
+           
+            <div class="form-margin">
+                <b>Offer Validity</b>
+                <div style="display:flex;justify-content: space-between;">
+               
+                    <div>
+                    <p> <label for="password">Start Date</label> </p>
+                
+                    <input type="date" placeholder="Select a date" class="input-border">
+                </div>
+               
+                
+                    <div style="margin-left: 20px;">
+                    <p><label for="password">End Date</label></p>
+               
+                    <input type="date" id="password" name="password" class="input-border">
+                </div>
+                </div>
+            </div>
+           
+             
+            
+            <div class="form-margin">
+            <b>offer type</b>
+            <div style="display: flex;">
+            <input type="radio">
+            <label for="pernectage"style="margin-left: 10px;">Percentage(%)</label>
+            <input type="radio" style="margin-left: 50px;">
+            <label for="pernectage" style="margin-left: 10px;">Flat</label><br>
+        </div>
+    </div>
+
+        <input type="text" class="input-border" style="width: 400px;">
+
+            <div style="display: flex;margin-left: 40px;margin-top: 20px; margin-bottom: 20px;">
+                <div>
+                    <div>
+                    <label for="maxdiscount"><b>Maximum Discount</b></label>
+                </div>
+                    <input type="text" class="input-border">
+                </div>
+                <div style="margin-left: 20px;">
+                    <div>
+                    <label for="maxdiscount"><b>Maximum Amount</b></label>
+                </div>
+                    <input type="text" class="input-border">
+                </div>
+            </div>
+
+
+            <p><b>Select User Type</b></p>
+            <div style="display: flex;justify-content: space-around; margin-bottom: 10px;">
+                <div>
+                    <input type="radio" name="newuser">
+                    <label class="newuser">New User</label>
+                </div>
+                <div>
+                    <input type="radio" name="exuser" style="margin-left: 10px;">
+                    <label class="exuser">Existing User</label>
+                </div>
+            </div>
+               <div style="display: flex;justify-content: space-between;">
+            <input type="radio">
+            <label for=""><b style="margin-left: 20px;">Applicable Customer Who Registered Between</b></label>
+        </div>
+            <div style="display: flex;justify-content: space-around; margin-bottom: 10px; margin-top: 10px;">
+                <div style="margin-right: 20px;">
+                    <div>
+                    <label for="">Start Date</label>
+                </div>
+                    <input type="date" class="input-border">
+                </div>
+
+                <div>
+                    <div>
+                    <label for="">End Date</label>
+                    </div>
+                    <input type="date" class="input-border">
+                </div>
+
+            </div>
+            <div style="display: flex;margin-bottom: 10px;">
+                <input type="radio" name="" id="">
+                <div style="margin: 20px;">
+                    <label for=""><b>Redemptions Per Customer </b><br>Applicable Once Per Customer</label>
+                </div>
+            </div>
+
+            <div style="display: flex;margin-bottom: 10px;">
+                <input type="radio" name="" id="">
+                <div style="margin: 20px;">
+                    <label for=""><b>Unique Customer Redemptions per Coupon </b><br>Applicable for the first 100
+                        Customer</label>
+                </div>
+            </div>
+
+            <label for="" style="margin-right: 20px;"><b>status</b></label>
+
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+
+
+
+            <div id="submission">
+                <button id="create" class="create close"><b>create</b></button>
+
+            </div>
+
+
+            <!-- 
       <div class="modal" id="modal">
         <div class="modal-header">
           <div class="title">example modal</div>
@@ -520,13 +648,10 @@
            Consequuntur voluptatibus iure nemo et!
         </div>
       </div> -->
-      </form>
+        </form>
 
 
-</div>
-
-
-
+    </div>
 
 
 
@@ -543,6 +668,7 @@
 
 
 
-<script src="script.js" ></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -3,10 +3,24 @@ const change1 = document.querySelector("#change1");
 const active=document.querySelector(".acti")
 
 change1.addEventListener("click", () => {
-    cards.forEach(card => {
-        card.classList.add("acti");
-        card.classList.remove("card");
+    const elements = document.querySelectorAll('.main');
+    const dropdown=document.querySelectorAll('.dropdown');
+    const acti= document.querySelectorAll('.acti')
+
+    // Loop through each element and remove it
+    elements.forEach(function(element) {
+        element.parentNode.removeChild(element);
     });
+
+    document.querySelectorAll('.page').forEach(function(ele){
+        ele.parentNode.removeChild(ele);
+    })
+
+    dropdown.forEach(function(ele){
+        ele.parentNode.removeChild(ele);
+    })
+
+    
     active.classList.add("container")
     active.classList.remove("acti")
 });
@@ -30,11 +44,12 @@ modalTitle.innerHTML = "<b>are sure do you want to deactivate the plan</b>";
 
 
 // Get all <li> elements within the <ul> with the style color: white
-const liElements = document.querySelectorAll('ul[style="color: white;"] li');
+const liElements = document.querySelectorAll('ul[style="color: white;padding: 0;margin: 0;"] li');
 
 // Add the 'nav-link' class to each <li> element
 liElements.forEach(li => {
     li.classList.add('nav-link');
+    li.style.paddingLeft='44px'
 });
 
 
@@ -54,10 +69,11 @@ function openform(event){
     form.style.top = "0"; 
     form.style.right = "0";
     form.style.backgroundColor='white'
-    form.style.padding='10px'
+    form.style.paddingLeft='10px'
     form.style.overflow = 'auto'; 
     form.style.height='100vh'
     form.style.fontWeight='normal'
+    form.style.margin="0px";
     document.querySelector('#overlay').style.display='block'
     if(opensidebar.contains(event.target)){
         var header=document.querySelector('#form header h1')
@@ -214,3 +230,27 @@ document.body.addEventListener('click',(event)=>{
 
 
 })
+
+
+
+
+
+
+
+// Function to handle window resize
+function handleResize() {
+    // Get the width and height of the window
+    var windowWidth = window.innerWidth;
+    var windowHeight = window.innerHeight;
+
+    // Log or do something with the window width and height
+    console.log("Window width: " + windowWidth + ", Window height: " + windowHeight);
+}
+
+// Add event listener for window resize
+window.addEventListener("resize", handleResize);
+
+// Call handleResize function initially to get the initial window size
+handleResize();
+
+

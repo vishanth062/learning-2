@@ -34,24 +34,21 @@ body{
     background-color: white;
     grid-area: main;
     display: grid;
-    grid-template-rows:1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows:1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     grid-template-areas:
     "c1"
     "c2"
     "c3"
     "c4";
-    margin: 20px;
-   
-   
-   
+    margin-top: 5px;
 }
 
 
  li{
     color:white;
     height: 40px;
-    width: 230px;
+    width: auto;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -65,15 +62,18 @@ body{
     margin-bottom: 20px;
     border-radius: 10px 10px 10px 10px;
     margin: top 0;
-    
+    margin-left: 44px;
     
 }
 
+.card-height {
+    height: 10px; /* Change the height to your desired value */
+    width: 10px; /* Change the width to your desired value */
+}
+
+
 .card:nth-child(1){
     grid-area: c1;
-    
-    
-    
 
 }
 .card:nth-child(2){
@@ -93,9 +93,11 @@ body{
     background-color: #26D07C;
     color: white;
     border-radius: 10px 10px 0 0;
+    justify-items: space-between;
+    padding-left: 5px;
 }
 
-/* Styles for .card-upper2 when it's a descendant of .card-upper1 */
+/* Styles for .card-upper2 when it's a descendant F .card-upper1 */
  .card-upper3 {
     background-color: #808080; /* This will inherit the background color from .card-upper1 */
     /* Add additional styles specific to .card-upper2 here */
@@ -104,14 +106,29 @@ body{
     background-color: #D87373; /* This will inherit the background color from .card-upper1 */
     /* Add additional styles specific to .card-upper2 here */
 }
+@media screen and (min-width: 600px) {
+    
 
 .card-lower1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    grid-template-rows:repeat(auto-fit,minmax(1fr,1fr));
     background-color:white;
     color: black;
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
     border-radius:0 0 10px 10px;
+    white-space: nowrap;
+}
+
+.lower-2{
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    white-space: nowrap;
+
+}
 }
 
 
@@ -120,6 +137,7 @@ body{
     margin-left: 10px;
     border-radius: 10px;
     border-right: thick;
+    width: 20%;
 }
 
 .lower11-info{
@@ -138,24 +156,36 @@ body{
     background-color:white;
     color: black;
 }
-.search{
-  width: 338px;
-  height: 100px;
-   align-items: center;
+.search {
+    height: 36px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 28px;
+    background-color: white;
+  }
+
+  .fa-search{
+    background-color: #FFD55A;
+    padding:10px;
+    border-radius: 0 50% 50% 0;
+    position:relative;
+    
+  }
   
-   border-radius: 28px;
-  background-color: #e1dede;
- 
-   
-}
+  
 .search-bar{
+    display: flex;
     background: transparent;
     border: none;
     outline: none;
    margin-right:10px;
-   padding: 10px;
+   padding: 20px;
     width: 338px;
-    height: 100px;
+    height: 0px;
+   
    
    
 }
@@ -172,14 +202,23 @@ body{
     
 }
 .dropdown{
-    margin:0;
-    padding: 0;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    margin-top: 20px;
+    
+    
 }
+
+.dropdown > div {
+    margin: 0; /* Reset margin to remove space between div elements */
+}
+
 
 .page{
     display: flex;
     justify-content: center;
+    padding: 10px;
+    margin: 60px;
     
 
 }
@@ -225,14 +264,18 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    transform: translate(10%,0%) scale(1);
+    transform: translate(5%,50%) scale(1);
     opacity: 1;
     transition: 2ms ease-in-out;
     
 }
 
  .acti{
-    opacity: 0;
+    /* opacity: 0.7; */
+    display: none;
+   
+    
+   
 }
 
 .nav-link:hover{
@@ -243,7 +286,7 @@ body{
 
 
 #overlay{
-    width: 68.7%;
+    width:100%;
     height: 100%;
     background-color: rgba(0, 0, 0,0.2);
     position:fixed;
@@ -324,4 +367,39 @@ body{
   }
 
 
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 20px;
 
+}
+
+
+.form-margin{
+    margin-top:20px;
+}
+
+  .input-border{
+    border:1px solid #AAAAAA;
+     border-radius: 6px;
+  }
+
+
+  .border-margin{
+    border-right: 1px solid #E7EBF7;
+
+  }
+
+  .lower-card-allign{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+
+  @media screen and (max-width: 990px) {
+    .card-lower1 {
+        flex-direction: column;
+    }
+}
